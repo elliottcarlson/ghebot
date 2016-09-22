@@ -1,0 +1,34 @@
+{
+  "name": "ghebot",
+  "version": "0.0.1",
+  "description": "GitHub Enterprise Slack Bot",
+  "main": "ghebot/index.js",
+  "scripts": {
+    "start": "./node_modules/babel-cli/bin/babel-node.js ghebot/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Elliott Carlson <x@sublim.nl>",
+  "license": "MIT",
+  "engines": {
+    "node": "6.2.0"
+  },
+  "dependencies": {
+    "@slack/client": "3.6.0",
+    "babel-cli": "6.14.0",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-preset-es2015": "6.14.0",
+    "babel-preset-es2017": "6.14.0",
+    "collectd": "0.0.1",
+    "dotenv": "2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "es2017"
+    ],
+    "plugins": [
+      "transform-decorators-legacy"
+    ]
+  }
+}
